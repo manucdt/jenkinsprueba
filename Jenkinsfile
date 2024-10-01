@@ -3,7 +3,7 @@ pipeline {
         IMAGEN = "mmartinez2005/myapp"
         USUARIO = 'USER_DOCKERHUB'
     }
-    agent any
+    agent { label 'local' }
     stages {
         stage('Clone') {
             steps {
